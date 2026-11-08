@@ -6,7 +6,7 @@ const getMinutes = function (time) {
   return hours * 60 + minutes;
 };
 
-const isMeetingWithinWorkingHours = function (startWorkingDay, endWorkingDay, startMeeting, meetingDuration) {
+window.isMeetingWithinWorkingHours = function (startWorkingDay, endWorkingDay, startMeeting, meetingDuration) {
   const startWorkingDayMinutes = getMinutes(startWorkingDay);
   const endWorkingDayMinutes = getMinutes(endWorkingDay);
   const startMeetingMinutes = getMinutes(startMeeting);
